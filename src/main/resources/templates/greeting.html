@@ -1,11 +1,10 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'greeting')}">
 <body>
-	<h1>Form</h1>
+	<h1>Greetings!</h1>
     <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
-    	<p>Id: <input type="text" th:field="*{id}" /></p>
-        <p>Message: <input type="text" th:field="*{content}" /></p>
-        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    	<p>Enter the temperature in fahrenheit: <input type="text" th:field="*{fahrenheit}" /></p>
+        <p><input type="submit" value="Submit" /></p>
     </form>
 </body>
 </html>

@@ -3,8 +3,7 @@
 
 <body>
 	<h1>Result</h1>
-    <p th:text="'id: ' + ${greeting.id}"></p>
-    <p th:text="'content: ' + ${greeting.content}"></p>
-    <a href="/greeting">Submit another message</a>
+    <p th:text="'Celsius: ' + ${greeting.fahrenheit}"></p>
+    <a href="/greeting">Convert another temperature</a>
 </body>
 </html>

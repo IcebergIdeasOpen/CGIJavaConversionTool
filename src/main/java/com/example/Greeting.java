@@ -2,23 +2,16 @@ package com.example;
 
 public class Greeting {
 
-	private long id;
-	private String content;
+	private int fahrenheit;
 
-	public long getId() {
-		return id;
+	public int getFahrenheit() {
+		TemperatureConverter converter = new TemperatureConverter();
+		int celsius = converter.Input(fahrenheit);
+		return celsius;
 	}
 
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public String getContent() {
-		return content;
-	}
-
-	public void setContent(String content) {
-		this.content = content;
+	public void setFahrenheit(int fahrenheit) {
+		this.fahrenheit = fahrenheit;
 	}
 
 }
