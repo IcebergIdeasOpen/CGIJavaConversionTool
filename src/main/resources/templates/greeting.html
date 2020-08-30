@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="https://www.thymeleaf.org">
-<head> 
-    <title>Temperature Conversion</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'greeting')}">
 <body>
 	<h1>Form</h1>
     <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
