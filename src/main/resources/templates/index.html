@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
 
 <body>
-<h1>Form</h1>
+<h1>Java Temperature Conversion Tool</h1>
 <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
     <p>Id: <input type="text" th:field="*{id}" /></p>
     <p>Message: <input type="text" th:field="*{content}" /></p>
