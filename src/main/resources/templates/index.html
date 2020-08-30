@@ -1,9 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
-<head>
-    <title>Getting Started: Handling Form Submission</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
+
 <body>
 <h1>Form</h1>
 <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
