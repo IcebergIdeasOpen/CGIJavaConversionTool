@@ -3,15 +3,21 @@ package com.example;
 public class Greeting {
 
 	private int fahrenheit;
+	private int celsius;
 
 	public int getFahrenheit() {
-		TemperatureConverter converter = new TemperatureConverter();
-		int celsius = converter.Input(fahrenheit);
-		return celsius;
+		return fahrenheit;
 	}
 
 	public void setFahrenheit(int fahrenheit) {
 		this.fahrenheit = fahrenheit;
+	}
+	public int getCelsius() {
+		return celsius;
+	}
+
+	public void setCelsius(int celsius) {
+		this.celsius = celsius;
 	}
 
 }

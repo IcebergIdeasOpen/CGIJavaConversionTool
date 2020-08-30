@@ -18,6 +18,9 @@ public class GreetingController {
 	@PostMapping("/greeting")
 	public String greetingSubmit(@ModelAttribute com.example.Greeting greeting, Model model) {
 		model.addAttribute("greeting", greeting);
+		TemperatureConverter converter = new TemperatureConverter();
+		int celsius = converter.Input(greeting.getFahrenheit());
+		greeting.setCelsius(celsius);
 		return "result";
 	}
 
