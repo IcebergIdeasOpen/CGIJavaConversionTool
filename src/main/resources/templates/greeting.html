@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'greeting')}">
 <body>
-	<h1>Greetings!</h1>
+	<h1>Greetings! New Team</h1>
     <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
     	<p>Enter the temperature in fahrenheit: <input type="text" th:field="*{fahrenheit}" /></p>
         <p><input type="submit" value="Submit" /></p>
